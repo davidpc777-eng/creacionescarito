@@ -29,7 +29,8 @@ textarea{width:100%;resize:vertical}
 .card{background:var(--card);border:1px solid var(--bd);border-radius:12px;overflow:hidden;display:flex;flex-direction:column;cursor:pointer}
 .card:hover{border-color:var(--gold)}
 .ph{aspect-ratio:3/4;background:var(--bg);display:flex;align-items:center;justify-content:center;font-size:3.5rem}.ph img{width:100%;height:100%;object-fit:contain}
-.bd{padding:12px;display:flex;flex-direction:column;gap:5px}
+.bd{padding:12px;display:flex;flex-direction:column;gap:5px;flex:1}
+.bd>.wa{margin-top:auto}
 .cat{font-size:.72rem;color:var(--mut);text-transform:uppercase;letter-spacing:.05em}
 .name{font-weight:600}.price{font-size:1.25rem;font-weight:700;color:var(--ac)}.rent{font-size:.85rem;color:var(--mut)}
 .tag{font-size:.8rem;font-weight:600}.ok{color:var(--ok)}.low{color:var(--warn)}.out{color:var(--bad)}
@@ -107,7 +108,7 @@ dialog::backdrop{background:rgba(0,0,0,.6)}
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.min.js"></script>
 <script>
 /* ====== CONFIGURACIÓN: cambia solo estas 3 líneas ====== */
-const SUPABASE_URL="https://tzintgrbwuvdduyiicuw.supabase.co";
+const SUPABASE_URL="https://tzintgrbwuvdduyiicuw.supabase.co/rest/v1/";
 const SUPABASE_KEY="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InR6aW50Z3Jid3V2ZGR1eWlpY3V3Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTMxNTI4ODMsImV4cCI6MjEwODcyODg4M30.bcMtid8d__NzS_Xp86fepvmaIiBF-cO3L9aPEvnnpDk";
 const WHATSAPP="51943950279"; // código de país + número, sin + ni espacios
 /* ======================================================= */
